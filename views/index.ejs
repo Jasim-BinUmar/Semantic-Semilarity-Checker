@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css" >
+  <title>Semantic similarity checker</title>
+</head>
+<body>
+  <h1 >Semantic similarity checker</h1>
+  
+  <div class="container" >
+    <form action="/uploadFiles" method="post" enctype="multipart/form-data">
+      <input type="file" name="files" accept=".docx" multiple />
+      <input type="submit" value="Upload" />
+    </form>
+    
+    
+
+    <label id="outputLabel"> <%= bertOutputResult %> </label>
+    <label id="outputLabel"> <%= xlNetOutputResult %> </label>
+    <label id="outputLabel"> <%= roBertOutputResult %> </label>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+torch==2.0.1+cpu
+transformers==4.29.2
+sklearn==1.2.2
+numpy==1.23.5
+sys==3.11.3
+textract==1.6.5
+re==2.2.1
